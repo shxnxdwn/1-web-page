@@ -187,3 +187,117 @@
     font-size: 2rem;
   }
 }
+.whatwedo {
+  background-color: #000;
+}
+
+.whatwedo__text {
+  margin: 0 auto;
+}
+
+.whatwedo__tittle {
+  font-family: "Poppins";
+  font-style: normal;
+  font-weight: 400;
+  font-size: 40px;
+  line-height: 105%;
+  text-align: center;
+  color: #fff;
+  margin: 0 0 15px 0;
+}
+
+.whatwedo__subtittle {
+  font-family: "Poppins";
+  font-style: normal;
+  font-weight: 400;
+  font-size: 23px;
+  line-height: 130%;
+  text-align: center;
+  color: #C0C0C0;
+  margin: 0 0 40px 0;
+}
+
+.whatwedo__content {
+  display: flex;
+  flex-wrap: wrap;
+  padding-bottom: 12%;
+}
+
+.whatwedo__content-item {
+  padding: 42% 3% 3% 3%;
+  margin: 0.7%;
+}
+
+.content-item {
+  display: flex;
+  flex-direction: column;
+  flex: 1 1 48.6%;
+  position: relative;
+  overflow: hidden;
+}
+
+.content-item img {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  -o-object-fit: cover;
+     object-fit: cover;
+}
+
+.content-item__tittle {
+  font-family: "Poppins";
+  font-style: normal;
+  font-weight: 400;
+  font-size: 14px;
+  line-height: 143%;
+  letter-spacing: 2px;
+  text-transform: uppercase;
+  color: #FFFFFF;
+  position: relative;
+  margin-bottom: 3%;
+}
+
+.content-item__text {
+  font-family: "Poppins";
+  font-style: normal;
+  font-weight: 400;
+  font-size: 14px;
+  line-height: 143%;
+  color: #C0C0C0;
+  flex: 1 1 auto;
+  position: relative;
+  margin-bottom: 6%;
+}
+
+.content-item__button {
+  background: #FFFFFF;
+  border-radius: 14px;
+  display: inline-block;
+  align-self: flex-start;
+  position: relative;
+}
+
+.content-item__link {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  font-family: "Poppins";
+  font-style: normal;
+  font-weight: 400;
+  font-size: 15px;
+  line-height: 133%;
+  letter-spacing: 0.4px;
+  color: #000000;
+  margin: 8px;
+}
+.content-item__link::before {
+  content: "";
+  background-color: #000;
+  border-radius: 50%;
+  width: 24px;
+  height: 24px;
+  display: inline-block;
+  margin-right: 7px;
+}
