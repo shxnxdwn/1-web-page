@@ -20,7 +20,15 @@
 
 // --------- PAGE STYLES ---------------------------------------------------------------------------------------
 
-//.page__main-block {}
+.page {
+    flex: 1 1 auto;
+}
+
+.page__main-block {
+    height: 100vh;
+    position: relative;
+    overflow: hidden;
+}
 
 // --------- HEADER --------------------------------------------------------------------------------------------
 
@@ -80,14 +88,22 @@
 
 // ---------- MAIN BLOCK -------------------------------------------------------------------------------------------
 
-//.main-block {}
+.main-block {
+    background-image: url('../img/main-block/background.jpg');
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-attachment: fixed;
+}
 
 .main-block__container {
     margin: 0 auto;
-    width: 600px;
+    max-width: 600px;
     position: relative;
-    z-index: 5;
-    margin-top: 600px;
+}
+
+.main-block__text {
+    padding-top: 50vh;
 }
 
 .main-block__tittle {
@@ -110,7 +126,7 @@
     line-height: 110%;
     text-align: center;
     color: #FFFFFF;
-    margin-bottom: 18px;
+    margin-bottom: 0.5vw;
 }
 
 .main-block__company-info {
@@ -125,16 +141,18 @@
 }
 
 .main-block__photo-data {
-    margin-right: 40px;
+    margin-top: 5%;
+    margin-right: 2.77%;
 }
 
 .photo-data {
-    position: relative;
-    z-index: 5;
     color: #fff;
     display: flex;
     align-items: center;
     justify-content: flex-end;
+    position: relative;
+    bottom: 0;
+    right: 0;
 }
 
 .photo-data__icon {
@@ -150,16 +168,29 @@
     color: #FFFFFF;
 }
 
-.main-block__background {
-    overflow: hidden;
+@media (max-width: 992px) {
+    .main-block__text {
+        padding-top: 40vh;
+    }
+    .main-block__tittle {
+        font-size: 0.75rem;
+    }
+    .main-block__company-name {
+        font-size: 2.5rem;
+    }
+    .main-block__company-info {
+        font-size: 0.75rem;
+    }
+    .photo-data__text {
+        font-size: 10px;
+    }
 }
 
-.main-block__background img {
-    position: absolute;
-    top: 0;
-    left: 0;
-    width: 100%;
-    height: 100%;
-    z-index: 1;
-    object-fit: cover; 
+@media (max-width: 375px) {
+    .main-block__text {
+        padding-top: 30vh;
+    }
+    .main-block__company-name {
+        font-size: 2rem;
+    }
 }
