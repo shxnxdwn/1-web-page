@@ -1,15 +1,12 @@
-// --------- IMPORT ---------
+// --------- IMPORT --------------------------------------------------------------------------------------------
 
 @import url('../style/nullstyle.css');
 @import url('https://fonts.googleapis.com/css2?family=Poppins&display=swap');
 
-// --------- COMMON STYLES ---------
-
-// body {}
+// --------- COMMON STYLES -------------------------------------------------------------------------------------
 
 .wrapper {
     min-height: 100%;
-    overflow: hidden;
     display: flex;
     flex-direction: column;
 }
@@ -21,10 +18,14 @@
     box-sizing: content-box;
 }
 
-// --------- HEADER ---------
+// --------- PAGE STYLES ---------------------------------------------------------------------------------------
+
+//.page__main-block {}
+
+// --------- HEADER --------------------------------------------------------------------------------------------
 
 .header {
-    position: absolute;
+    position: sticky;
     z-index: 999;
     top: 0;
     left: 0;
@@ -65,7 +66,7 @@
     color: #fff;
 }
 
-.menu__button {
+.menu__item_button {
     padding: 10px 20px;
     background-color: #fff;
     border-radius: 14px;
@@ -73,6 +74,92 @@
     letter-spacing: 0.4px;
 }
 
-.menu__button-link {
+.menu__link_button {
     color: #000;
+}
+
+// ---------- MAIN BLOCK -------------------------------------------------------------------------------------------
+
+//.main-block {}
+
+.main-block__container {
+    margin: 0 auto;
+    width: 600px;
+    position: relative;
+    z-index: 5;
+    margin-top: 600px;
+}
+
+.main-block__tittle {
+    font-family: 'Poppins';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 14px;
+    line-height: 143%;
+    text-align: center;
+    letter-spacing: 2px;
+    text-transform: uppercase;
+    color: #C0C0C0;
+}
+
+.main-block__company-name {
+    font-family: 'Poppins';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 54px;
+    line-height: 110%;
+    text-align: center;
+    color: #FFFFFF;
+    margin-bottom: 18px;
+}
+
+.main-block__company-info {
+    font-family: 'Poppins';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 14px;
+    line-height: 143%;
+    text-align: center;
+    color: #C0C0C0;
+    padding: 10px;
+}
+
+.main-block__photo-data {
+    margin-right: 40px;
+}
+
+.photo-data {
+    position: relative;
+    z-index: 5;
+    color: #fff;
+    display: flex;
+    align-items: center;
+    justify-content: flex-end;
+}
+
+.photo-data__icon {
+    margin-left: 15px;
+}
+
+.photo-data__text {
+    font-family: 'Poppins';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 12px;
+    line-height: 100%;
+    color: #FFFFFF;
+}
+
+.main-block__background {
+    overflow: hidden;
+}
+
+.main-block__background img {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    z-index: 1;
+    object-fit: cover; 
 }
