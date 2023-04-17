@@ -58,6 +58,11 @@
     min-height: 80vh;
 }
 
+.page__need-help {
+    overflow: hidden;
+    min-height: 70vh;
+}
+
 // --------- HEADER --------------------------------------------------------------------------------------------
 
 .header {
@@ -836,7 +841,84 @@
     }
 }
 
+// ---------- NEED HELP (BLOCK 8) ----------------------------------------------------------------------------
 
+.need-help {
+    background-color: #000;
+}
+
+.need-help__body {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    margin: 12% auto;
+    padding: 15px;
+}
+
+.need-help__tittle {
+    font-family: 'Poppins';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 40px;
+    line-height: 105%;
+    text-align: center;
+    color: #FFFFFF;
+    margin-bottom: 15px;
+}
+
+.need-help__subtittle {
+    font-family: 'Poppins';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 24px;
+    line-height: 125%;
+    text-align: center;
+    color: #C0C0C0;
+    margin-bottom: 12px;
+}
+
+.need-help__button {
+    background: #FFFFFF;
+    border-radius: 14px;
+    display: inline-block;  
+    position: relative;
+    margin: 8px 0 8px 0;
+
+}
+
+.need-help__button-link {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    font-family: 'Poppins';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 15px;
+    line-height: 133%;
+    letter-spacing: 0.4px;
+    color: #000000;
+    margin: 9px;
+
+    &::before {
+        content: "";
+        background-color: #000;
+        border-radius: 50%;
+        width: 24px;
+        height: 24px;
+        display: inline-block;
+        margin-right: 7px;
+    }
+}
+
+@media (max-width: 620px) {
+    .need-help__tittle {
+        font-size: 30px;
+    }
+    .need-help__subtittle {
+        font-size: 22px;
+    }
+}
 
 
 
