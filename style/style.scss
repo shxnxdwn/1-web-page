@@ -48,6 +48,11 @@
     min-height: 80vh;
 }
 
+.page__clents {
+    overflow: hidden;
+    min-height: 70vh;
+}
+
 // --------- HEADER --------------------------------------------------------------------------------------------
 
 .header {
@@ -674,6 +679,69 @@
     .leafs__text {
         width: 70vw;
         margin: 0 5vw 0 25vw;
+    }
+}
+
+// ---------- CLIENTS (BLOCK 6) ----------------------------------------------------------------------------
+
+.clents {
+    background-color: #000;
+}
+
+.clents__body {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    margin: 120px auto 100px;
+}
+
+.clents__text {
+    margin-bottom: 40px;
+}
+
+.clents__tittle {
+    font-family: 'Poppins';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 40px;
+    line-height: 105%;
+    text-align: center;
+    color: #FFFFFF;
+    margin-bottom: 15px;
+}
+
+.clents__subtittle {
+    font-family: 'Poppins';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 24px;
+    line-height: 125%;
+    text-align: center;
+    color: #C0C0C0;
+}
+
+.clients__logos {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.clients__logos img {
+    padding: calc(20px + (40 - 20) * ((100vw - 320px) / (1440 - 320)));
+    flex: 0 0 20%;
+}
+
+@media (max-width: 925px) {
+    .clients__logos {
+        flex-wrap: wrap;
+        justify-content: space-around;
+    }
+}
+
+@media (max-width: 360px) {
+    .clients__logos img {
+        margin-bottom: 20px;
     }
 }
 
