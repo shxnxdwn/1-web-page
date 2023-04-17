@@ -74,6 +74,11 @@
   color: #000;
 }
 
+@media (max-width: 992px) {
+  .menu {
+    display: none;
+  }
+}
 .main-block__container {
   margin: 0 auto;
   max-width: 600px;
@@ -121,7 +126,7 @@
 }
 
 .main-block__photo-data {
-  margin-top: 5%;
+  padding-top: 7%;
   margin-right: 2.77%;
 }
 
@@ -300,4 +305,94 @@
   height: 24px;
   display: inline-block;
   margin-right: 7px;
+}
+
+@media (max-width: 470px) {
+  .content-item__text {
+    font-size: 12px;
+  }
+  .content-item__link {
+    font-size: 12px;
+  }
+}
+.sunset {
+  position: relative;
+}
+
+.sunset__text {
+  width: 20%;
+  height: 100%;
+  position: absolute;
+  margin: 0 3% 0 77%;
+  z-index: 5;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+
+.sunset__tittle {
+  font-family: "Poppins";
+  font-style: normal;
+  font-weight: 400;
+  font-size: 14px;
+  line-height: 143%;
+  letter-spacing: 2px;
+  text-transform: uppercase;
+  color: #FFFFFF;
+}
+
+.sunset__subtittle {
+  font-family: "Poppins";
+  font-style: normal;
+  font-weight: 400;
+  font-size: 14px;
+  line-height: 143%;
+  color: #C0C0C0;
+}
+
+.sunset__photo-data {
+  position: absolute;
+  margin-right: 2.77%;
+  margin-bottom: 2%;
+}
+
+.sunset__background {
+  position: relative;
+  width: 100%;
+  height: 75vh;
+}
+
+.sunset__background img {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  -o-object-fit: cover;
+     object-fit: cover;
+}
+
+@media (max-width: 992px) {
+  .sunset__text {
+    width: 35vw;
+    margin: 0 5vw 0 60vw;
+  }
+}
+@media (max-width: 565px) {
+  .sunset__text {
+    width: 45vw;
+    margin: 0 5vw 0 50vw;
+  }
+}
+@media (max-width: 436px) {
+  .sunset__text {
+    width: 60vw;
+    margin: 0 5vw 0 35vw;
+  }
+}
+@media (max-width: 330px) {
+  .sunset__text {
+    width: 70vw;
+    margin: 0 5vw 0 25vw;
+  }
 }
