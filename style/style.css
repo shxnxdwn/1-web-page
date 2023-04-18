@@ -117,7 +117,15 @@
   color: #000;
 }
 
-@media (max-width: 992px) {
+@media (max-width: 910px) {
+  .menu__item {
+    margin: 15px 8px;
+  }
+  .menu__link {
+    font-size: 12px;
+  }
+}
+@media (max-width: 740px) {
   .menu {
     display: none;
   }
